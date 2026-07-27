@@ -1,6 +1,6 @@
 # Christoppher Mena — Portfolio
 
-Portfolio profesional de **Christoppher Mena**, desarrollador web especializado en Landing Pages modernas, rápidas y optimizadas para conversión.
+Portafolio profesional de **Christoppher Mena**, desarrollador web especializado en Landing Pages modernas, rápidas y optimizadas para conversión.
 
 Construido con Astro 5 + Tailwind CSS 4 + TypeScript.
 
