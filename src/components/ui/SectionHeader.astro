@@ -9,7 +9,7 @@ export interface Props {
 }
 ---
 
-<div class={`mb-16 ${Astro.props.animate !== false ? 'fade-up' : ''} ${Astro.props.align === 'left' ? 'text-left' : 'text-center'}`}>
+<div class={`mb-10 ${Astro.props.animate !== false ? 'fade-up' : ''} ${Astro.props.align === 'left' ? 'text-left' : 'text-center'}`}>
   {Astro.props.label && (
     <p class="text-xs font-semibold tracking-[0.16em] uppercase text-primary mb-4">{Astro.props.label}</p>
   )}

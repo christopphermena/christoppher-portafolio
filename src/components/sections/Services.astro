@@ -24,8 +24,8 @@ const icons: Record<string, string> = {
     />
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       {SERVICES.map((service, i) => (
-        <article class="bg-card border border-border rounded-[--radius-lg] p-7 transition-all duration-[0.22s] ease-in-out hover:-translate-y-[2px] hover:border-primary/20 hover:shadow-[0_8px_32px_-8px_rgba(99,102,241,0.12)] fade-up">
-          <div class={`w-10 h-10 rounded-[--radius-md] border flex items-center justify-center mb-4 ${i % 3 === 0 ? 'bg-primary/10 border-primary/20 text-primary' : i % 3 === 1 ? 'bg-accent/10 border-accent/20 text-accent' : 'bg-accent-soft/10 border-accent-soft/20 text-accent-soft'}`}>
+        <article class="bg-card border border-border rounded-[--radius-lg] p-6 transition-all duration-[0.22s] ease-in-out hover:-translate-y-[2px] hover:border-primary/20 hover:shadow-[0_8px_32px_-8px_rgba(99,102,241,0.12)] fade-up">
+                      <div class={`w-11 h-11 rounded-[--radius-md] border flex items-center justify-center mb-4 ${i % 3 === 0 ? 'bg-primary/10 border-primary/20 text-primary' : i % 3 === 1 ? 'bg-accent/10 border-accent/20 text-accent' : 'bg-accent-soft/10 border-accent-soft/20 text-accent-soft'}`}>
             <svg class="w-5 h-5 stroke-current fill-none stroke-[1.75] stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24" aria-hidden="true">
               {icons[service.icon] && <Fragment set:html={icons[service.icon]} />}
             </svg>

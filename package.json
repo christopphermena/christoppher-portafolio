@@ -1,8 +1,8 @@
 {
-  "name": "nsbyte-dev",
+  "name": "christopphermena-dev",
   "type": "module",
   "version": "1.0.0",
-  "description": "Landing Pages modernas, tutoriales de desarrollo web y diseño.",
+  "description": "Portfolio profesional de Christoppher Mena — Landing Pages modernas y optimizadas.",
   "engines": {
     "node": ">=18.17.1"
   },

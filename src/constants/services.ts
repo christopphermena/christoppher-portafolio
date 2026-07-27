@@ -11,16 +11,16 @@ export const SERVICES: Service[] = [
   {
     id: 2,
     icon: 'palette',
-    title: 'Diseño UI',
+    title: 'Diseño UI / UX',
     description:
-      'Interfaces limpias con identidad visual coherente, microinteracciones y atención al detalle.',
+      'Interfaces limpias con identidad visual coherente, microinteracciones y experiencia de usuario cuidada al detalle.',
   },
   {
     id: 3,
     icon: 'code',
-    title: 'Astro',
+    title: 'Desarrollo Web',
     description:
-      'Sitios ultrarrápidos con Astro, generación estática y lo mejor del ecosistema moderno.',
+      'Sitios ultrarrápidos con Astro, rendimiento impecable y las mejores prácticas del desarrollo moderno.',
   },
   {
     id: 4,
@@ -34,13 +34,13 @@ export const SERVICES: Service[] = [
     icon: 'search',
     title: 'SEO Técnico',
     description:
-      'Estructura semántica, Open Graph, Schema, sitemaps y todo lo necesario para destacar en buscadores.',
+      'Estructura semántica, Open Graph, Schema.org, sitemaps y todo lo necesario para destacar en buscadores.',
   },
   {
     id: 6,
     icon: 'smartphone',
-    title: 'Responsive',
+    title: 'Responsive Design',
     description:
-      'Experiencia impecable en cualquier dispositivo, desde móviles hasta pantallas grandes.',
+      'Experiencia impecable en cualquier dispositivo, desde móviles hasta pantallas 4K.',
   },
 ]

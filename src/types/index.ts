@@ -31,14 +31,13 @@ export interface Project {
   url?: string
 }
 
-export interface Tutorial {
+export interface Testimonial {
   id: number
-  title: string
-  description: string
-  category: string
-  duration: string
-  image?: string
-  url?: string
+  name: string
+  role: string
+  company: string
+  quote: string
+  avatar?: string
 }
 
 export interface TechItem {
@@ -55,10 +54,7 @@ export interface SiteConfig {
   locale: string
   social: {
     github?: string
-    youtube?: string
-    twitter?: string
-    instagram?: string
-    tiktok?: string
+    linkedin?: string
     email: string
   }
 }

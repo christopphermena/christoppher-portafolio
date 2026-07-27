@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#og-gradient)" opacity="0.4"/>
+  <text x="600" y="280" text-anchor="middle" fill="white" font-family="system-ui, sans-serif" font-weight="800" font-size="72">Christoppher Mena</text>
+  <text x="600" y="360" text-anchor="middle" fill="#94a3b8" font-family="system-ui, sans-serif" font-weight="400" font-size="28">Desarrollo Web &amp; UI Design</text>
+  <rect x="540" y="400" width="120" height="3" rx="1.5" fill="url(#cm-gradient)"/>
+  <defs>
+    <linearGradient id="og-gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#a855f7" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="cm-gradient" x1="0" y1="0" x2="120" y2="3" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+</svg>

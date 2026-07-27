@@ -1,0 +1,44 @@
+---
+import { TESTIMONIALS } from '../../constants'
+import Section from '../ui/Section.astro'
+import Container from '../ui/Container.astro'
+import SectionHeader from '../ui/SectionHeader.astro'
+---
+
+<Section id="testimonios" ariaLabelledby="testimonials-title" background="gradient">
+  <Container>
+    <SectionHeader
+      label="Testimonios"
+      title="Lo que dicen mis clientes"
+      description="La mejor carta de presentación es el resultado de quienes confiaron en mi trabajo."
+      id="testimonials-title"
+    />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {TESTIMONIALS.map((testimonial) => (
+        <blockquote class="bg-card border border-border rounded-[--radius-lg] p-6 transition-all duration-[0.22s] hover:-translate-y-[2px] hover:border-primary/20 hover:shadow-[0_8px_32px_-8px_rgba(99,102,241,0.1)] fade-up">
+          <div class="flex gap-1 mb-4">
+            {[1, 2, 3, 4, 5].map(() => (
+              <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            ))}
+          </div>
+          <p class="text-sm text-text-secondary leading-[1.7] mb-6 italic">
+            &ldquo;{testimonial.quote}&rdquo;
+          </p>
+          <footer>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white text-sm font-bold">
+                {testimonial.name.charAt(0)}
+              </div>
+              <div>
+                <cite class="text-sm font-semibold text-text-primary not-italic block">{testimonial.name}</cite>
+                <span class="text-[0.7rem] text-text-muted">{testimonial.role}, {testimonial.company}</span>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </Container>
+</Section>

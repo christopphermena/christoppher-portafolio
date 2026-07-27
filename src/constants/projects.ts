@@ -3,34 +3,34 @@ import type { Project } from '../types'
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'SaaS Landing',
+    title: 'SaaS Landing Page',
     description:
-      'Landing page moderna para una startup SaaS con diseño limpio, animaciones sutiles y formulario de contacto.',
+      'Landing page moderna para una startup SaaS con diseño limpio, animaciones sutiles y formulario de contacto integrado.',
     tags: ['Astro', 'Tailwind', 'Animaciones'],
     url: '#',
   },
   {
     id: 2,
-    title: 'Portfolio Creativo',
+    title: 'E-commerce Dashboard',
     description:
-      'Portfolio personal con galería de proyectos, diseño responsivo y modo oscuro.',
-    tags: ['React', 'Framer Motion', 'CSS'],
+      'Panel de administración con visualización de datos en tiempo real, gráficos interactivos y gestión de inventario.',
+    tags: ['React', 'TypeScript', 'Chart.js'],
     url: '#',
   },
   {
     id: 3,
-    title: 'E-commerce Mini',
+    title: 'Web Corporativa',
     description:
-      'Tienda en línea con catálogo de productos, carrito de compras y pasarela de pago.',
-    tags: ['Astro', 'Tailwind', 'Integraciones'],
+      'Sitio corporativo completo con secciones de servicios, equipo, blog y formulario de contacto. Optimizado para SEO.',
+    tags: ['Astro', 'MDX', 'SEO'],
     url: '#',
   },
   {
     id: 4,
-    title: 'Web Corporativa',
+    title: 'App de Tareas',
     description:
-      'Sitio corporativo con secciones de servicios, equipo, blog y formulario de contacto.',
-    tags: ['Astro', 'MDX', 'SEO'],
+      'Aplicación web full-stack para gestión de tareas con autenticación, base de datos en tiempo real y modo oscuro.',
+    tags: ['Next.js', 'Supabase', 'Tailwind'],
     url: '#',
   },
 ]
