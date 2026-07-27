@@ -5,7 +5,7 @@ export const SITE: SiteConfig = {
   tagline: 'Desarrollo Web & UI Design',
   description:
     'Desarrollador web especializado en crear Landing Pages modernas, rápidas y optimizadas para conversión. Transformo ideas en experiencias digitales que impulsan resultados.',
-  url: 'https://christopphermena.dev',
+  url: 'https://christoppher.netlify.app',
   email: 'christopphermena@gmail.com',
   locale: 'es_CL',
   social: {
