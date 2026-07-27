@@ -2,7 +2,7 @@
 const COOKIE_KEY = 'nsb_cookie_consent'
 ---
 
-<div id="cookie-banner" role="region" aria-label="Aviso de cookies" aria-live="polite" class="fixed bottom-0 left-0 right-0 z-[200] bg-card border-t border-border p-4 px-6 flex flex-wrap gap-3 items-center justify-between translate-y-0 transition-transform duration-[0.35s] ease-in-out">
+<div id="cookie-banner" role="region" aria-label="Aviso de cookies" aria-live="polite" class="fixed bottom-0 left-0 right-0 z-[200] bg-card border-t border-border p-4 px-6 flex flex-wrap gap-3 items-center justify-between translate-y-full transition-transform duration-[0.35s] ease-in-out">
   <p class="text-[0.8rem] text-text-muted flex-1 min-w-[200px]">
     Este sitio usa cookies de analítica para mejorar la experiencia.
   </p>
@@ -16,21 +16,17 @@ const COOKIE_KEY = 'nsb_cookie_consent'
   const COOKIE_KEY = 'nsb_cookie_consent'
   const banner = document.getElementById('cookie-banner')
 
-  if (localStorage.getItem(COOKIE_KEY)) {
-    banner?.classList.add('hidden')
+  if (banner && !localStorage.getItem(COOKIE_KEY)) {
+    banner.classList.remove('translate-y-full')
   }
 
   document.getElementById('cookie-accept')?.addEventListener('click', () => {
     localStorage.setItem(COOKIE_KEY, 'accepted')
-    banner?.classList.add('hidden')
+    banner?.classList.add('translate-y-full')
   })
 
   document.getElementById('cookie-decline')?.addEventListener('click', () => {
     localStorage.setItem(COOKIE_KEY, 'declined')
-    banner?.classList.add('hidden')
+    banner?.classList.add('translate-y-full')
   })
 </script>
-
-<style>
-  .hidden { transform: translateY(100%); }
-</style>
