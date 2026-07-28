@@ -12,13 +12,15 @@ export function initScrollAnimations(): void {
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' },
     )
 
-    document.querySelectorAll('.fade-up').forEach((el, i) => {
-      ;(el as HTMLElement).style.transitionDelay = `${(i % 4) * 0.08}s`
-      observer.observe(el)
-    })
+    const elements = document.querySelectorAll<HTMLElement>('.fade-up')
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].style.transitionDelay = `${(i % 4) * 0.08}s`
+      observer.observe(elements[i])
+    }
   } else {
-    document.querySelectorAll('.fade-up').forEach((el) => {
-      el.classList.add('visible')
-    })
+    const elements = document.querySelectorAll('.fade-up')
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.add('visible')
+    }
   }
 }

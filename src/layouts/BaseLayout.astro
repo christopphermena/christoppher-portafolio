@@ -5,6 +5,10 @@ import Schema from '../components/seo/Schema.astro'
 import Analytics from '../components/seo/Analytics.astro'
 import Navbar from '../components/widgets/Navbar.astro'
 import CookieBanner from '../components/widgets/CookieBanner.astro'
+import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2'
+import inter600 from '@fontsource/inter/files/inter-latin-600-normal.woff2'
+import inter700 from '@fontsource/inter/files/inter-latin-700-normal.woff2'
+import inter900 from '@fontsource/inter/files/inter-latin-900-normal.woff2'
 
 export interface Props {
   title?: string
@@ -30,6 +34,10 @@ export interface Props {
     <Schema />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="alternate icon" href="/favicon.ico" sizes="any" />
+    <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href={inter600} as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href={inter700} as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href={inter900} as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <Navbar />
