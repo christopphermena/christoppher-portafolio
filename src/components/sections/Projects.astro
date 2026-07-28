@@ -23,7 +23,7 @@ const gradients = [
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {PROJECTS.map((project, i) => (
         <article
-          class="group bg-card border border-border rounded-[--radius-lg] overflow-hidden transition-all duration-[0.3s] hover:-translate-y-[2px] hover:border-primary/20 hover:shadow-[0_8px_24px_-8px_rgba(99,102,241,0.12)] fade-up"
+          class="group bg-card border border-border rounded-[--radius-lg] overflow-hidden transition-all duration-[0.3s] hover:-translate-y-[2px] hover:border-primary/20 hover:shadow-[0_8px_24px_-8px_rgba(99,102,241,0.12)] fade-up flex flex-col"
         >
           <div class={`aspect-[4/3] bg-gradient-to-br ${gradients[i % gradients.length]} relative overflow-hidden`}>
             <div class="absolute inset-0 flex items-center justify-center">
