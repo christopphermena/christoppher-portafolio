@@ -8,7 +8,7 @@ const year = new Date().getFullYear()
     <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-8 pb-8 border-b border-border">
       <div class="footer-brand">
         <a href="/" class="flex items-center gap-2.5 flex-shrink-0 mb-3" aria-label={`${SITE.name} - Inicio`}>
-          <img src="/logo.svg" alt={SITE.name} class="w-9 h-9" />
+          <img src="/logo.svg" alt="" class="w-9 h-9" />
           <span class="text-[1.05rem] font-extrabold text-text-primary tracking-[-0.02em]">{SITE.name}</span>
         </a>
         <p class="text-sm text-text-muted leading-[1.7] max-w-[280px]">
@@ -17,7 +17,7 @@ const year = new Date().getFullYear()
       </div>
 
       <nav class="footer-col" aria-label="Secciones">
-        <h4 class="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-text-muted mb-4">Navegación</h4>
+        <h3 class="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-text-muted mb-4">Navegación</h3>
         <ul class="flex flex-col gap-2.5">
           <li><a href="#proyectos" class="text-sm text-text-muted transition-colors duration-[0.22s] hover:text-text-primary">Proyectos</a></li>
           <li><a href="#sobre-mi" class="text-sm text-text-muted transition-colors duration-[0.22s] hover:text-text-primary">Sobre mí</a></li>
@@ -27,7 +27,7 @@ const year = new Date().getFullYear()
       </nav>
 
       <div class="footer-col">
-        <h4 class="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-text-muted mb-4">Conéctate</h4>
+        <h3 class="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-text-muted mb-4">Conéctate</h3>
         <ul class="flex flex-col gap-2.5">
           {SITE.social.github && (
             <li><a href={SITE.social.github} target="_blank" rel="noopener noreferrer" class="text-sm text-text-muted transition-colors duration-[0.22s] hover:text-text-primary">GitHub</a></li>
