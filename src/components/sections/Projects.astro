@@ -35,11 +35,11 @@ const gradients = [
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[0.3s]" />
           </div>
-          <div class="p-4">
+          <div class="p-4 flex flex-col flex-1">
             <h3 class="text-[0.85rem] font-bold text-text-primary mb-1 group-hover:text-primary transition-colors duration-[0.22s]">
               {project.title}
             </h3>
-            <p class="text-[0.75rem] text-text-secondary leading-[1.55] mb-2.5">{project.description}</p>
+            <p class="text-[0.75rem] text-text-secondary leading-[1.55] mb-2.5 flex-1">{project.description}</p>
             <div class="flex flex-wrap gap-1 mb-2.5">
               {project.tags.map((tag) => (
                 <span class="text-[0.55rem] font-medium px-1.5 py-0.5 rounded-full bg-primary/10 border border-primary/20 text-primary-light">
