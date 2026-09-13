@@ -3,11 +3,12 @@ import type { Project } from '../types'
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'SaaS Landing Page',
+    title: 'Landing Page Restobar',
     description:
-      'Landing page moderna para una startup SaaS con diseño limpio, animaciones sutiles y formulario de contacto integrado.',
+      'Landing page moderna para un restobar con diseño limpio, animaciones sutiles, menú digital y botón de reserva por WhatsApp.',
     tags: ['Astro', 'Tailwind', 'Animaciones'],
-    url: '#',
+    image: '/projects/restobar-las-tranqueras.png',
+    url: 'https://restobar-las-tranqueras.netlify.app/',
   },
   {
     id: 2,
